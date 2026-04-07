@@ -1,18 +1,33 @@
-div{
-   color: fuchsia;
+/* 1. Обнуляем все отступы и границы */
+*, *::before, *::after {
+   margin: 0;
+   padding: 0;
+   border: none;
+    box-sizing: border-box; /* Удобная модель коробок */
 }
-.text{
-   color: blue;
+
+/* 2. Убираем маркеры списков */
+ul, ol, li {
+   list-style: none;
 }
-.green{
-   color: green;
+
+/* 3. Сбрасываем стили ссылок */
+a, a:link, a:visited {
+   text-decoration: none;
+   color: inherit;
 }
-.violet{
-   color: violet;
+
+/* 4. Улучшаем отображение изображений */
+img {
+   vertical-align: top;
+   max-width: 100%;
+   height: auto;
 }
-.red{
-   color: red;
-}
-.orange{
-   color: orange;
+
+/* 5. Убираем стили по умолчанию для форм */
+button, input, textarea, select {
+   font-family: inherit;
+   font-size: inherit;
+   background-color: transparent;
+   color: inherit;
 }
